@@ -1349,7 +1349,7 @@
 
     new-instance v14, Ljava/io/FileInputStream;
 
-    const-string v15, "/sdcard/.ANXCamera/cheatcodes/cheatcodes.json"
+    const-string v15, "/system/etc/ANXCamera/cheatcodes/cheatcodes.json"
 
     invoke-direct {v14, v15}, Ljava/io/FileInputStream;-><init>(Ljava/lang/String;)V
 
