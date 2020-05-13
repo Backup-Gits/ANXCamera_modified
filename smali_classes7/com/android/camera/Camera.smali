@@ -74,8 +74,6 @@
 
 .field private mDisplayFeatureManager:Lmiui/hardware/display/DisplayFeatureManager;
 
-.field private mFirebaseAnalytics:Lcom/google/firebase/analytics/FirebaseAnalytics;
-
 .field private mFirstOrientationArrived:Z
 
 .field private mHasBeenSetupOnFocusChanged:Z
@@ -3701,12 +3699,6 @@
 
     invoke-super {p0, v2}, Lcom/android/camera/ActivityBase;->onCreate(Landroid/os/Bundle;)V
 
-    invoke-static {p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
-
-    move-result-object v1
-
-    iput-object v1, p0, Lcom/android/camera/Camera;->mFirebaseAnalytics:Lcom/google/firebase/analytics/FirebaseAnalytics;
-
     invoke-static {}, Lcom/android/camera/data/DataRepository;->dataItemFeature()Lcom/mi/config/a;
 
     move-result-object p1
@@ -3793,12 +3785,6 @@
     invoke-static {p1, v0}, Lcom/android/camera/log/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     invoke-super {p0, v2}, Lcom/android/camera/ActivityBase;->onCreate(Landroid/os/Bundle;)V
-
-    invoke-static {p0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->getInstance(Landroid/content/Context;)Lcom/google/firebase/analytics/FirebaseAnalytics;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/camera/Camera;->mFirebaseAnalytics:Lcom/google/firebase/analytics/FirebaseAnalytics;
 
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 

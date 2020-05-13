@@ -33,8 +33,6 @@
     <uses-permission android:name="com.miui.securitycenter.permission.PERM_USE_INFO"/>
     <uses-permission android:name="android.permission.CONTROL_DISPLAY_BRIGHTNESS"/>
     <uses-permission android:name="mediatek.permission.ACCESS_APU_SYS"/>
-    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
-    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
     <permission android:name="com.android.camera.permission.RESET_PREF" android:protectionLevel="normal"/>
     <permission android:name="com.xiaomi.camera.AUX_CONTROL" android:protectionLevel="privileged|signature"/>
     <permission android:name="com.android.camera.permission.SPLASH" android:protectionLevel="signatureOrSystem"/>
@@ -74,12 +72,6 @@
         <receiver android:name="com.android.camera.preferences.ResetPreferenceBroadcastReceiver" android:permission="com.android.camera.permission.RESET_PREF">
             <intent-filter>
                 <action android:name="miui.intent.action.RESET_CAMERA_PREF"/>
-            </intent-filter>
-        </receiver>
-        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
-        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER"/>
             </intent-filter>
         </receiver>
         <activity android:clearTaskOnLaunch="true" android:configChanges="keyboard|keyboardHidden|mcc|mnc|navigation|orientation|screenSize" android:launchMode="singleTop" android:name="com.android.camera.Camera" android:resizeableActivity="false" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow" android:visibleToInstantApps="true" android:windowSoftInputMode="stateAlwaysHidden|adjustPan">
@@ -171,19 +163,5 @@
         <meta-data android:name="dynamicoverscroller" android:value="1.0"/>
         <meta-data android:name="spring" android:value="1.0"/>
         <meta-data android:name="compat" android:value="1.0"/>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
-        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
-        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
-        </service>
-        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
-            <intent-filter>
-                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
-            </intent-filter>
-        </receiver>
-        <provider android:authorities="com.aeonax.camera.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
-        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@style/ThemeCameraSettingsMiuiX"/>
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
     </application>
 </manifest>

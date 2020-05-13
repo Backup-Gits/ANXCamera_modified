@@ -4111,7 +4111,6 @@
     <public type="integer" name="record_progress_delay_time" id="0x7f0a0014" />
     <public type="integer" name="status_bar_notification_info_maxnum" id="0x7f0a0015" />
     <public type="integer" name="target_sdk_version" id="0x7f0a0016" />
-    <public type="integer" name="google_play_services_version" id="0x7f0a0017" />
     <public type="interpolator" name="btn_checkbox_checked_mtrl_animation_interpolator_0" id="0x7f0b0000" />
     <public type="interpolator" name="btn_checkbox_checked_mtrl_animation_interpolator_1" id="0x7f0b0001" />
     <public type="interpolator" name="btn_checkbox_unchecked_mtrl_animation_interpolator_0" id="0x7f0b0002" />
@@ -9962,32 +9961,6 @@
     <public type="string" name="willow_s_s_m_t" id="0x7f1015b0" />
     <public type="string" name="willow_s_s_n" id="0x7f1015b1" />
     <public type="string" name="willow_s_u_w" id="0x7f1015b2" />
-    <public type="string" name="common_google_play_services_enable_button" id="0x7f1015b3" />
-    <public type="string" name="common_google_play_services_enable_text" id="0x7f1015b4" />
-    <public type="string" name="common_google_play_services_enable_title" id="0x7f1015b5" />
-    <public type="string" name="common_google_play_services_install_button" id="0x7f1015b6" />
-    <public type="string" name="common_google_play_services_install_text" id="0x7f1015b7" />
-    <public type="string" name="common_google_play_services_install_title" id="0x7f1015b8" />
-    <public type="string" name="common_google_play_services_notification_channel_name" id="0x7f1015b9" />
-    <public type="string" name="common_google_play_services_notification_ticker" id="0x7f1015ba" />
-    <public type="string" name="common_google_play_services_unknown_issue" id="0x7f1015bb" />
-    <public type="string" name="common_google_play_services_unsupported_text" id="0x7f1015bc" />
-    <public type="string" name="common_google_play_services_update_button" id="0x7f1015bd" />
-    <public type="string" name="common_google_play_services_update_text" id="0x7f1015be" />
-    <public type="string" name="common_google_play_services_update_title" id="0x7f1015bf" />
-    <public type="string" name="common_google_play_services_updating_text" id="0x7f1015c0" />
-    <public type="string" name="common_google_play_services_wear_update_text" id="0x7f1015c1" />
-    <public type="string" name="common_open_on_phone" id="0x7f1015c2" />
-    <public type="string" name="common_signin_button_text" id="0x7f1015c3" />
-    <public type="string" name="common_signin_button_text_long" id="0x7f1015c4" />
-    <public type="string" name="default_web_client_id" id="0x7f1015c5" />
-    <public type="string" name="firebase_database_url" id="0x7f1015c6" />
-    <public type="string" name="gcm_defaultSenderId" id="0x7f1015c7" />
-    <public type="string" name="google_api_key" id="0x7f1015c8" />
-    <public type="string" name="google_app_id" id="0x7f1015c9" />
-    <public type="string" name="google_crash_reporting_api_key" id="0x7f1015ca" />
-    <public type="string" name="google_storage_bucket" id="0x7f1015cb" />
-    <public type="string" name="project_id" id="0x7f1015cc" />
     <public type="string" name="color_effect_entry_anx" id="0x7f1015cd" />
     <public type="style" name="AlertDialog.AppCompat" id="0x7f110000" />
     <public type="style" name="AlertDialog.AppCompat.Light" id="0x7f110001" />
